@@ -16,7 +16,7 @@
   -  Kaggle : Statistical Analysis on factors influencing Life Expectancy(WTO)
   -  링크 : https://www.kaggle.com/augustus0498/life-expectancy-who 
   -  Column 구성
-        - 1.Country : 국가 193개
+        - Country : 국가 193개
         - 2.Year : 연도 2000-2015
         - 3.Status : Developing(83%), Developed(17%)
         - 4.Life expentancy : 기대수명
