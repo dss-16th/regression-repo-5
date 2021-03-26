@@ -74,7 +74,7 @@
 ### 2-5. 모델 검증
 - 사용한 모델에 대한 K-Fold 수치
 <img width="890" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/78460413/112603568-897f0000-8e58-11eb-9352-426231c3dc30.png">
--  GridSearch
+- GridSearch
 <img width="987" alt="스크린샷 2021-03-26 오후 5 26 42" src="https://user-images.githubusercontent.com/78460413/112603573-8b48c380-8e58-11eb-846f-cf862380ecf8.png">
 
 
