@@ -1,11 +1,7 @@
 # 회귀 분석을 이용한 기대수명 예측
 
-
-
-
-
-
-그림 출처 : https://www.bbc.com/news/health-43726436
+![life_expectancy](https://user-images.githubusercontent.com/78460413/112588440-bfb18500-8e42-11eb-8319-1b456b7592c9.png)
+*그림 출처 : https://www.bbc.com/news/health-43726436
 
 ***
 ## 1. INTRO
