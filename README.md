@@ -16,28 +16,28 @@
   -  Kaggle : Statistical Analysis on factors influencing Life Expectancy(WTO)
   -  링크 : https://www.kaggle.com/augustus0498/life-expectancy-who 
   -  Column 구성
-    - 1. Country : 국가 193개
-    - 2. Year : 연도 2000-2015
-    - 3. Status : Developing(83%), Developed(17%)
-    - 4. Life expentancy : 기대수명
-    - 5. Adult Mortality : 성인남녀사망률(인구 1000명당 15-60세 사망률)
-    - 6. Infant deaths : 인구 1000명당 유아사망률
-    - 7. Alchol : 1인당 소비(15+)로 기록된 알코올(순수 알코올 리터 단위)
-    - 8. Percentage expenditure : 1인당 GDP 대비 건강에 대한 지출(%)
-    - 9. Hepatitis B : (1세 아동) 예방 접종 보장(%)
-    - 10.Meales : 인구 1000명당 홍역으로 보고된 사례 수
-    - 11. 11. BMI 지수
-    - 12. Under – five deaths : 1000명당 5세 미만 사망
-    - 13. Polio : 1세 아동 소아마비 예방 접종 보장(%)
-    - 14. Total expenditure : 총 정부 지원금 지출 대비 건강에 대한 정부 지원금 지출 (%)
-    - 15. Diphtheria : 1세 아동 파상풍 톡소이드 및 백일해 예방 접종 보장(%)
-    - 16. HIV/AIDS : 1000명당 사망(0-4세)
-    - 17. GDP : 1인당 국내 총생산
-    - 18. Population : 인구
-    - 19. thinness1-19years : 유병률(%)
-    - 20. thinness5-9years : 유병률(%)
-    - 21. Income composition of resources : 자원소득구성 중 인적자원
-    - 22. Schooling : 교육 정도
+        - 1. Country : 국가 193개
+        - 2. Year : 연도 2000-2015
+        - 3. Status : Developing(83%), Developed(17%)
+        - 4. Life expentancy : 기대수명
+        - 5. Adult Mortality : 성인남녀사망률(인구 1000명당 15-60세 사망률)
+        - 6. Infant deaths : 인구 1000명당 유아사망률
+        - 7. Alchol : 1인당 소비(15+)로 기록된 알코올(순수 알코올 리터 단위)
+        - 8. Percentage expenditure : 1인당 GDP 대비 건강에 대한 지출(%)
+        - 9. Hepatitis B : (1세 아동) 예방 접종 보장(%)
+        - 10.Meales : 인구 1000명당 홍역으로 보고된 사례 수
+        - 11. 11. BMI 지수
+        - 12. Under – five deaths : 1000명당 5세 미만 사망
+        - 13. Polio : 1세 아동 소아마비 예방 접종 보장(%)
+        - 14. Total expenditure : 총 정부 지원금 지출 대비 건강에 대한 정부 지원금 지출 (%)
+        - 15. Diphtheria : 1세 아동 파상풍 톡소이드 및 백일해 예방 접종 보장(%)
+        - 16. HIV/AIDS : 1000명당 사망(0-4세)
+        - 17. GDP : 1인당 국내 총생산
+        - 18. Population : 인구
+        - 19. thinness1-19years : 유병률(%)
+        - 20. thinness5-9years : 유병률(%)
+        - 21. Income composition of resources : 자원소득구성 중 인적자원
+        - 22. Schooling : 교육 정도
 
 ### 1-3 팀원 / 역할
 - [이지홍]
