@@ -65,7 +65,7 @@
 - 기대 수명과 각 요소간의 상관관계 히트맵 작성
 
 #### 1. 데이터 전처리 전 상관관계
-<img width="403" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/75352728/117157546-a284b480-adf9-11eb-82cc-afcdf01da8c7.png">
+<img width="547" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/75352728/117157546-a284b480-adf9-11eb-82cc-afcdf01da8c7.png">
 
 
 #### 2. 데이터 전처리 후 상관관계
