@@ -45,7 +45,7 @@
   - https://github.com/jihong7107
   - raw data 정제와 결측치 처리, 프레젠테이션 자료 작성, 리드미 작성
 - [이주영]
-  - https://github.com/***
+  - https://github.com/leekj3133
   -  데이터 전처리, 데이터 시각화, 데이터 스케일링, K-Fold 모델 검증, 모델 학습 평가, GridSearch 
 
 ## 2. PROCESS
