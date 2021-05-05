@@ -63,7 +63,16 @@
 
 ### 2-2. 상관관계 시각화
 - 기대 수명과 각 요소간의 상관관계 히트맵 작성
+
+#### 1. 데이터 전처리 전 상관관계
+<img width="403" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/75352728/117157546-a284b480-adf9-11eb-82cc-afcdf01da8c7.png">
+
+
+#### 2. 데이터 전처리 후 상관관계
 <img width="547" alt="스크린샷 2021-03-26 오후 3 28 06" src="https://user-images.githubusercontent.com/78460413/112591711-1e2d3200-8e48-11eb-8a9e-06e8b20814cf.png">
+
+- 전처리 전과 전처리 후 상관관계 차이 없음.
+
 
 - GDP 구간 별 기대수명과의 관계를 요소마다 시각화하여 확인
 <img width="508" alt="스크린샷 2021-03-26 오후 3 29 34" src="https://user-images.githubusercontent.com/78460413/112591718-208f8c00-8e48-11eb-94cc-789e6c0d5c23.png">
