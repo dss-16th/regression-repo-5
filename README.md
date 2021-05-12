@@ -246,7 +246,7 @@ reg.fit(X_train, y_train)`
 `pred_tr = reg.predict(X_train)
 pred_test = reg.predict(X_test)`
 
-<img width="177" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927594-612e6080-b335-11eb-9114-cd3091c49dc2.png">
+<img width="250" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927594-612e6080-b335-11eb-9114-cd3091c49dc2.png">
 
 #### 2-5.2 모델성능
 
