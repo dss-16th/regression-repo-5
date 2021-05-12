@@ -252,10 +252,24 @@ pred_test = reg.predict(X_test)`
 
 #### 1. Linear Regression & scaling
 
-<img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927630-6be8f580-b335-11eb-9b88-b844c4ee0e98.png">
-
 <img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117936405-c6874f00-b33f-11eb-948b-656123f75d66.png">
 
+
+#### 2. Ridge & scaling
+
+<img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117937299-c89ddd80-b340-11eb-8188-f69f4676b8a8.png">
+
+#### 3. Lasso & scaling
+
+<img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117937556-1b779500-b341-11eb-9d35-08c5923bee38.png">
+
+#### 4. ElasticNet & scaling
+
+<img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117937968-80cb8600-b341-11eb-96ec-7902ee02fa09.png">
+
+#### 5. RandomForestRegressor & scaling
+
+<img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117938212-c12b0400-b341-11eb-8d93-482d3b1cebec.png">
 
 
 ### 2-6. 모델 검증
