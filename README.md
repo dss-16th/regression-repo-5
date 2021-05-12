@@ -184,6 +184,15 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 - train 70%
 - test 30%                                               
 
+#### 2-4.3 선형회귀모델 만들기
+`import statsmodels.api as sm
+
+lm = sm.OLS(y_train, X_train).fit()
+lm.summary()`
+
+<img width="890" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/75352728/117925737-a0a77d80-b332-11eb-9057-e4dba7a3edb2.png">
+
+
 ### 2-5. 모델 학습과 예측 평가
 
 ### 2-6. 모델 검증
