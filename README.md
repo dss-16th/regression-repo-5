@@ -274,6 +274,8 @@ pred_test = reg.predict(X_test)`
 
 ### 2-6. 모델 검증
 
+## MSE 와 RMSE는 수치가 작을 수록 좋은 성능을 가진 모델로 볼 수 있다.
+
 - 사용한 모델에 대한 K-Fold 수치
 <img width="430" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/78460413/112603568-897f0000-8e58-11eb-9352-426231c3dc30.png">
 
@@ -283,6 +285,7 @@ pred_test = reg.predict(X_test)`
 - GridSearch
 <img width="450" alt="스크린샷 2021-03-26 오후 5 26 42" src="https://user-images.githubusercontent.com/78460413/112603573-8b48c380-8e58-11eb-846f-cf862380ecf8.png">
 
+## 최적의 모델 : RMSE가 제일 적은 RandomForest
 
 ## 3. CONCLUSION
 - 진행 사항
