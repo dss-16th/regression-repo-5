@@ -58,7 +58,7 @@
 
 ### 2-1. 데이터 전처리
 - GDP per capita 컬럼 4구간으로 나누어 원핫 인코딩
-
+<img width="403" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/78460413/112589053-c987b800-8e43-11eb-81da-d91f2a595b6c.png">
 <img width="618" alt="스크린샷 2021-05-06 오전 1 03 06" src="https://user-images.githubusercontent.com/75352728/117172480-d1edee00-ae06-11eb-8ad1-78d386ed11ef.png">
 
 - 결측치 유형에 따른 처리 방법 선택
@@ -70,7 +70,7 @@
 |20% 이상|모델 기반 처리|
 
 
-<img width="403" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/78460413/112589053-c987b800-8e43-11eb-81da-d91f2a595b6c.png">
+
 
 
 
