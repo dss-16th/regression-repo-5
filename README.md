@@ -88,7 +88,7 @@
 - 그 외 19개 컬럼 중위값으로 결측치 처리
   - 히스토그램 상에서 편측 되게 나타났기 때문에 중위값으로 대치
   
-<br/><br/>
+<br/>
 
 ![image](https://user-images.githubusercontent.com/75352728/117919303-b82d3900-b327-11eb-90bc-5e2d3a119569.png)
 
