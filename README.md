@@ -112,7 +112,8 @@
 
 <img width="447" alt="스크린샷 2021-05-05 오후 11 55 37" src="https://user-images.githubusercontent.com/75352728/117162229-8f73e380-adfd-11eb-9d5b-ee033d5332f0.png">
 
-
+- 교육수준 , 인적자원 비율, BMI 지수 : 양의 상관관계
+- HIV/AIDS, 성인남녀사망률 : 음의 상관관계
 
 <br/><br/>
 
