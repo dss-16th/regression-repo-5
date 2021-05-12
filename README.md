@@ -158,6 +158,32 @@
    
 ### 2-4. 피쳐와 타겟 전처리
 
+#### 2-4.1 사용하지 않는 데이터 제거
+
+`led.drop(columns=['Country','Status'], inplace=True)
+led.drop(columns='GDP_Bins', inplace=True)`
+
+- 원핫인코딩한 GDP 사용 예정
+- Country, GDP_BINS, Status 컬럼 제거
+
+#### 2-4.2 컬럼 타입 전처리
+
+`led = led.astype('float')`
+
+- 타입을 실수로 통일
+
+#### 2-4.2 데이터 니누기
+
+`from sklearn.model_selection import train_test_split
+X = led.drop('Lifeexpectancy', axis=1)
+y = led['Lifeexpectancy']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, 
+                                                   test_size = 0.3,
+                                                   random_state=13)`
+- train 70%
+- test 30%                                               
+
 ### 2-5. 모델 학습과 예측 평가
 
 ### 2-6. 모델 검증
