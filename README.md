@@ -121,10 +121,6 @@
   
  <br/>
  
- <img width="700" src="https://user-images.githubusercontent.com/75352728/117919930-e95a3900-b328-11eb-9ae3-bebc48a389e6.png">
-
-
-<br/>
  
 #### 3.2 HIV/AIDS, 성인남녀사망률에서는 음의 상관관계를 보였다.
   - 인간면역결핍바이러스 걸린 사람이 많을 수록 기대수명은 떨어진다. 
@@ -134,7 +130,7 @@
     
    <br/>
 
-<img width="700" src="https://user-images.githubusercontent.com/75352728/117920970-e06a6700-b32a-11eb-832b-beb163c6b8aa.png">
+
 
 <br/><br/>
 
@@ -151,10 +147,14 @@
 - 선진국의 기대수명이 현저히 높음.
 
 #### 2-3.2. GDP 구간 별 기대수명과의 관계를 요소마다 시각화하여 확인
-<img width="508" alt="스크린샷 2021-03-26 오후 3 29 34" src="https://user-images.githubusercontent.com/78460413/112591718-208f8c00-8e48-11eb-94cc-789e6c0d5c23.png">
 
+ <img width="700" src="https://user-images.githubusercontent.com/75352728/117919930-e95a3900-b328-11eb-9ae3-bebc48a389e6.png">
 
+<br/>
 
+<img width="700" src="https://user-images.githubusercontent.com/75352728/117920970-e06a6700-b32a-11eb-832b-beb163c6b8aa.png">
+
+<br/>
 
 ### 2-4. 피쳐와 타겟 전처리
 
