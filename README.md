@@ -185,15 +185,69 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 - test 30%                                               
 
 #### 2-4.3 선형회귀모델 만들기
+
 `import statsmodels.api as sm
 
 lm = sm.OLS(y_train, X_train).fit()
 lm.summary()`
 
-<img width="890" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/75352728/117925737-a0a77d80-b332-11eb-9057-e4dba7a3edb2.png">
+<img width="407" alt="스크린샷 2021-05-12 오후 3 01 06" src="https://user-images.githubusercontent.com/75352728/117925919-e19f9200-b332-11eb-8f96-3fda92fb9e83.png">
 
+- R-squared:0.997 -> 좋은 모델
+  - R-squared이 높을 수록 좋은 모델이지만 컬럼이 많을 수록 R-squared가 높아질수밖에 없다고 한다.
+-  The condition number is large, 5.38e+09. This might indicate that there are
+strong multicollinearity or other numerical problems.
+ => 조건수가 너무 큼, 강한 다중공선성이 있을 수 있음. -> 스케일링 필요(더미변수 제외)
+
+#### 2-4.4 다중공산성 변수를 찾기 위한 VIF 계산
+`from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+sm.OLS(y_train, X_train).exog_names
+
+pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train, X_train).exog, i)} 
+             for i, column in enumerate(sm.OLS(y_train, X_train).exog_names)
+             if column != 'Intercept')  # 절편의 VIF는 구하지 않는다.
+`
+<img width="200" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
+
+- 높게 나타나면 상관성이 높은것..(10보다 크면 크다고 할 수 있음)
+- 계수가 통계적으로 유의미하지 않다면 대처
+- 계수가 통계적으로 유의미하다면 VIF 크더라도 괜찮음
+- 변수를 더하거나 빼서 새로운 변수 만들기(두 예측변수를 빼거나 더해도 문제 없을 경우)
+- 더하거나 빼기 어려운 경우 변수 모형에서 제거
+
+## 다중공산성이 변수 간에 영향을 미치지만 변수들의 관계도 의미가 있으므로 제거는 하지않는다!
 
 ### 2-5. 모델 학습과 예측 평가
+
+#### 2-5.1 예측
+
+`predictions = lm.predict(X_test)
+predictions, y_test`
+
+![image](https://user-images.githubusercontent.com/75352728/117927246-e5ccaf00-b334-11eb-9ece-0e419432cf5d.png)
+
+#### 2-5.2 참값과 예측값의 직관적 비교
+`sns.scatterplot(y_test, predictions);
+plt.plot([50,90],[50,90], 'r',ls='dashed',lw=3);`
+
+![image](https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png)
+
+#### 2-5.2 모델학습
+`from sklearn.linear_model import LinearRegression
+
+reg = LinearRegression()
+reg.fit(X_train, y_train)`
+
+#### 2-5.2 모델평가
+`pred_tr = reg.predict(X_train)
+pred_test = reg.predict(X_test)`
+
+<img width="177" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927594-612e6080-b335-11eb-9114-cd3091c49dc2.png">
+
+#### 2-5.2 모델성능
+
+![image](https://user-images.githubusercontent.com/75352728/117927630-6be8f580-b335-11eb-9b88-b844c4ee0e98.png)
 
 ### 2-6. 모델 검증
 - 사용한 모델에 대한 K-Fold 수치
