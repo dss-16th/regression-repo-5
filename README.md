@@ -59,8 +59,8 @@
 ### 2-1. 데이터 전처리
 - GDP per capita 컬럼 4구간으로 나누어 원핫 인코딩
 
-<img width="400" alt="스크린샷 2021-05-06 오전 1 03 06" src="https://user-images.githubusercontent.com/75352728/117172480-d1edee00-ae06-11eb-8ad1-78d386ed11ef.png">
-<img width="400" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/78460413/112589053-c987b800-8e43-11eb-81da-d91f2a595b6c.png">
+<img width="450" alt="스크린샷 2021-05-06 오전 1 03 06" src="https://user-images.githubusercontent.com/75352728/117172480-d1edee00-ae06-11eb-8ad1-78d386ed11ef.png">
+<img width="450" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/78460413/112589053-c987b800-8e43-11eb-81da-d91f2a595b6c.png">
 
 - 결측치 유형에 따른 처리 방법 선택
 
@@ -72,13 +72,13 @@
 
 `led.isnull().sum()`
 
-<img width="400" alt="스크린샷 2021-05-12 오후 1 35 07" src="https://user-images.githubusercontent.com/75352728/117918861-df373b00-b326-11eb-998d-052cec4a135f.png">
+<img width="450" alt="스크린샷 2021-05-12 오후 1 35 07" src="https://user-images.githubusercontent.com/75352728/117918861-df373b00-b326-11eb-998d-052cec4a135f.png">
 
 ## 간염 B형의 결측값은 왜 많을까? 
 
 `led[led['HepatitisB'].isnull()]["Country"].unique()`
 
-<img width="400" alt="스크린샷 2021-05-12 오후 1 38 04" src="https://user-images.githubusercontent.com/75352728/117919045-48b74980-b327-11eb-9ee4-558bf8a06835.png">
+<img width="450" alt="스크린샷 2021-05-12 오후 1 38 04" src="https://user-images.githubusercontent.com/75352728/117919045-48b74980-b327-11eb-9ee4-558bf8a06835.png">
 
 ## 접종률이 낮은 나라 중에 선진국, 개발도상국 다양하다.
 =>  간염 B형의 결측값은 0 또는 중위수로 변환 -> 호주 접종률 94.6% -> 중위수로 결정
@@ -90,7 +90,7 @@
   
 <br/>
 
-![image](https://user-images.githubusercontent.com/75352728/117919303-b82d3900-b327-11eb-90bc-5e2d3a119569.png)
+<img width="450" alt="스크린샷 2021-05-12 오후 1 38 04" src="https://user-images.githubusercontent.com/75352728/117919303-b82d3900-b327-11eb-90bc-5e2d3a119569.png">
 
 <br/><br/>
 
@@ -98,13 +98,13 @@
 - 기대 수명과 각 요소간의 상관관계 히트맵 작성
 
 #### 1. 데이터 전처리 전 상관관계
-<img width="547" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/75352728/117157546-a284b480-adf9-11eb-82cc-afcdf01da8c7.png">
+<img width="450" alt="스크린샷 2021-03-26 오후 2 58 02" src="https://user-images.githubusercontent.com/75352728/117157546-a284b480-adf9-11eb-82cc-afcdf01da8c7.png">
 
 - 전체 정부 지출 대비 건강에 관한 정부 지출(%), 교육 정도 => 평균값으로 결측치 처리
 - 나머지 => 중위값으로 결측치 처리
   
 #### 2. 데이터 전처리 후 상관관계
-<img width="547" alt="스크린샷 2021-03-26 오후 3 28 06" src="https://user-images.githubusercontent.com/78460413/112591711-1e2d3200-8e48-11eb-8a9e-06e8b20814cf.png">
+<img width="450" alt="스크린샷 2021-03-26 오후 3 28 06" src="https://user-images.githubusercontent.com/78460413/112591711-1e2d3200-8e48-11eb-8a9e-06e8b20814cf.png">
 
 => 전처리 전과 전처리 후 상관관계 차이 없음.
 
