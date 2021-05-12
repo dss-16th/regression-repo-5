@@ -225,7 +225,7 @@ pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train,
 `predictions = lm.predict(X_test)
 predictions, y_test`
 
-![image](https://user-images.githubusercontent.com/75352728/117927246-e5ccaf00-b334-11eb-9ece-0e419432cf5d.png)
+<img width="400" alt="https://user-images.githubusercontent.com/75352728/117927246-e5ccaf00-b334-11eb-9ece-0e419432cf5d.png">
 
 #### 2-5.2 참값과 예측값의 직관적 비교
 
