@@ -125,7 +125,7 @@
 
 #### 2-3.1. 개발도상국과 선진국 기대수명 비교
 
-<img width="618" alt="스크린샷 2021-05-06 오전 1 14 33" src="https://user-images.githubusercontent.com/75352728/117174191-6c026600-ae08-11eb-9dbd-b08b8d0f9be3.png">
+<img width="450" alt="스크린샷 2021-05-06 오전 1 14 33" src="https://user-images.githubusercontent.com/75352728/117174191-6c026600-ae08-11eb-9dbd-b08b8d0f9be3.png">
 
 - 선진국의 기대수명이 현저히 높음.
 
@@ -191,7 +191,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 lm = sm.OLS(y_train, X_train).fit()
 lm.summary()`
 
-<img width="407" alt="스크린샷 2021-05-12 오후 3 01 06" src="https://user-images.githubusercontent.com/75352728/117925919-e19f9200-b332-11eb-8f96-3fda92fb9e83.png">
+<img width="450" alt="스크린샷 2021-05-12 오후 3 01 06" src="https://user-images.githubusercontent.com/75352728/117925919-e19f9200-b332-11eb-8f96-3fda92fb9e83.png">
 
 - R-squared:0.997 -> 좋은 모델
   - R-squared이 높을 수록 좋은 모델이지만 컬럼이 많을 수록 R-squared가 높아질수밖에 없다고 한다.
