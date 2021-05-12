@@ -133,8 +133,8 @@
     - 당연히 성인 사망률이 늘어나므로 기대수명이 떨어질 수밖에 없다.    
     
    <br/>
-   
-<img width="700" src="https://user-images.githubusercontent.com/75352728/117920606-1b1fcf80-b32a-11eb-9f4f-513de5e402e6.png">
+
+<img width="700" src="https://user-images.githubusercontent.com/75352728/117920970-e06a6700-b32a-11eb-832b-beb163c6b8aa.png">
 
 <br/><br/>
 
