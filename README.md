@@ -72,7 +72,7 @@
 
 `led.isnull().sum()`
 
-<img width="450" alt="스크린샷 2021-05-12 오후 1 35 07" src="https://user-images.githubusercontent.com/75352728/117918861-df373b00-b326-11eb-998d-052cec4a135f.png">
+<img width="300" alt="스크린샷 2021-05-12 오후 1 35 07" src="https://user-images.githubusercontent.com/75352728/117918861-df373b00-b326-11eb-998d-052cec4a135f.png">
 
 ## 간염 B형의 결측값은 왜 많을까? 
 
@@ -208,7 +208,7 @@ pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train,
              for i, column in enumerate(sm.OLS(y_train, X_train).exog_names)
              if column != 'Intercept')  # 절편의 VIF는 구하지 않는다.`
              
-<img width="300" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
+<img width="350" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
 
 - 높게 나타나면 상관성이 높은것..(10보다 크면 크다고 할 수 있음)
 - 계수가 통계적으로 유의미하지 않다면 대처
@@ -232,7 +232,7 @@ predictions, y_test`
 `sns.scatterplot(y_test, predictions);
 plt.plot([50,90],[50,90], 'r',ls='dashed',lw=3);`
 
-<img width="450" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
+<img width="400" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
 
 #### 2-5.2 모델학습
 
@@ -250,12 +250,12 @@ pred_test = reg.predict(X_test)`
 
 #### 2-5.2 모델성능
 
-![image](https://user-images.githubusercontent.com/75352728/117927630-6be8f580-b335-11eb-9b88-b844c4ee0e98.png)
+<img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927630-6be8f580-b335-11eb-9b88-b844c4ee0e98.png">
 
 ### 2-6. 모델 검증
 
 - 사용한 모델에 대한 K-Fold 수치
-<img width="450" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/78460413/112603568-897f0000-8e58-11eb-9352-426231c3dc30.png">
+<img width="430" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/78460413/112603568-897f0000-8e58-11eb-9352-426231c3dc30.png">
 
 - 회귀 평가 지표
 <img width="450" alt="스크린샷 2021-03-26 오후 5 32 01" src="https://user-images.githubusercontent.com/78460413/112604249-42ddd580-8e59-11eb-9daf-e099496fa7e0.png">
