@@ -232,7 +232,7 @@ predictions, y_test`
 `sns.scatterplot(y_test, predictions);
 plt.plot([50,90],[50,90], 'r',ls='dashed',lw=3);`
 
-<img width="350" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
+<img width="300" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
 
 #### 2-5.2 모델학습
 
