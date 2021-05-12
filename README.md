@@ -225,14 +225,14 @@ pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train,
 `predictions = lm.predict(X_test)
 predictions, y_test`
 
-<img width="400" alt="https://user-images.githubusercontent.com/75352728/117927246-e5ccaf00-b334-11eb-9ece-0e419432cf5d.png">
+<img width="400" src="https://user-images.githubusercontent.com/75352728/117927246-e5ccaf00-b334-11eb-9ece-0e419432cf5d.png">
 
 #### 2-5.2 참값과 예측값의 직관적 비교
 
 `sns.scatterplot(y_test, predictions);
 plt.plot([50,90],[50,90], 'r',ls='dashed',lw=3);`
 
-![image](https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png)
+<img width="400" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
 
 #### 2-5.2 모델학습
 
