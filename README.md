@@ -208,7 +208,7 @@ pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train,
              for i, column in enumerate(sm.OLS(y_train, X_train).exog_names)
              if column != 'Intercept')  # 절편의 VIF는 구하지 않는다.`
              
-<img width="200" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
+<img width="450" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
 
 - 높게 나타나면 상관성이 높은것..(10보다 크면 크다고 할 수 있음)
 - 계수가 통계적으로 유의미하지 않다면 대처
@@ -225,14 +225,14 @@ pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train,
 `predictions = lm.predict(X_test)
 predictions, y_test`
 
-<img width="400" src="https://user-images.githubusercontent.com/75352728/117927246-e5ccaf00-b334-11eb-9ece-0e419432cf5d.png">
+<img width="450" src="https://user-images.githubusercontent.com/75352728/117927246-e5ccaf00-b334-11eb-9ece-0e419432cf5d.png">
 
 #### 2-5.2 참값과 예측값의 직관적 비교
 
 `sns.scatterplot(y_test, predictions);
 plt.plot([50,90],[50,90], 'r',ls='dashed',lw=3);`
 
-<img width="400" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
+<img width="450" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
 
 #### 2-5.2 모델학습
 
@@ -246,7 +246,7 @@ reg.fit(X_train, y_train)`
 `pred_tr = reg.predict(X_train)
 pred_test = reg.predict(X_test)`
 
-<img width="350" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927594-612e6080-b335-11eb-9114-cd3091c49dc2.png">
+<img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927594-612e6080-b335-11eb-9114-cd3091c49dc2.png">
 
 #### 2-5.2 모델성능
 
@@ -255,13 +255,13 @@ pred_test = reg.predict(X_test)`
 ### 2-6. 모델 검증
 
 - 사용한 모델에 대한 K-Fold 수치
-<img width="890" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/78460413/112603568-897f0000-8e58-11eb-9352-426231c3dc30.png">
+<img width="450" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/78460413/112603568-897f0000-8e58-11eb-9352-426231c3dc30.png">
 
 - 회귀 평가 지표
-<img width="727" alt="스크린샷 2021-03-26 오후 5 32 01" src="https://user-images.githubusercontent.com/78460413/112604249-42ddd580-8e59-11eb-9daf-e099496fa7e0.png">
+<img width="450" alt="스크린샷 2021-03-26 오후 5 32 01" src="https://user-images.githubusercontent.com/78460413/112604249-42ddd580-8e59-11eb-9daf-e099496fa7e0.png">
 
 - GridSearch
-<img width="987" alt="스크린샷 2021-03-26 오후 5 26 42" src="https://user-images.githubusercontent.com/78460413/112603573-8b48c380-8e58-11eb-846f-cf862380ecf8.png">
+<img width="450" alt="스크린샷 2021-03-26 오후 5 26 42" src="https://user-images.githubusercontent.com/78460413/112603573-8b48c380-8e58-11eb-846f-cf862380ecf8.png">
 
 
 ## 3. CONCLUSION
