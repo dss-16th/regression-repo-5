@@ -148,7 +148,7 @@
 
 #### 2-3.2. GDP 구간 별 기대수명과의 관계를 요소마다 시각화하여 확인
 
- <img width="700" src="https://user-images.githubusercontent.com/75352728/117919930-e95a3900-b328-11eb-9ae3-bebc48a389e6.png">
+ <img width="700" src="https://user-images.githubusercontent.com/75352728/117923047-6340f100-b32e-11eb-8ea5-1813456cec0e.png">
 
 <br/>
 
