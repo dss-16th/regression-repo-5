@@ -208,7 +208,7 @@ pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train,
              for i, column in enumerate(sm.OLS(y_train, X_train).exog_names)
              if column != 'Intercept')  # 절편의 VIF는 구하지 않는다.`
              
-<img width="450" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
+<img width="300" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
 
 - 높게 나타나면 상관성이 높은것..(10보다 크면 크다고 할 수 있음)
 - 계수가 통계적으로 유의미하지 않다면 대처
