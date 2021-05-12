@@ -41,20 +41,25 @@
         - Income composition of resources : 자원소득구성 중 인적자원
         - Schooling : 교육 정도
 
+<br/>
+
 ### 1-3 팀원 / 역할
 - [이지홍]
   - https://github.com/jihong7107
   - raw data 정제와 결측치 처리, 프레젠테이션 자료 작성, 리드미 작성
 - [이주영]
   - https://github.com/leekj3133
-  -  데이터 전처리, 데이터 시각화, 데이터 스케일링, K-Fold 모델 검증, 모델 학습 평가, GridSearchCV, 모델 성능 
+  -  데이터 전처리, 데이터 시각화, 데이터 스케일링, K-Fold 모델 검증, 모델 학습 평가, GridSearchCV, 모델 성능, READ_ME 작성 
 
 *****
+
+<br/>
 
 ## 2. PROCESS
 
 데이터 전처리 -> 상관관계 시각화 -> 피쳐와 타겟 전처리 -> 모델학습과 예측 평가 -> 모델 검증 
  
+<br/>
 
 ### 2-1. 데이터 전처리
 - GDP per capita 컬럼 4구간으로 나누어 원핫 인코딩
@@ -74,11 +79,17 @@
 
 <img width="300" alt="스크린샷 2021-05-12 오후 1 35 07" src="https://user-images.githubusercontent.com/75352728/117918861-df373b00-b326-11eb-998d-052cec4a135f.png">
 
+<br/>
+
 ## 간염 B형의 결측값은 왜 많을까? 
+
+<br/>
 
 `led[led['HepatitisB'].isnull()]["Country"].unique()`
 
 <img width="450" alt="스크린샷 2021-05-12 오후 1 38 04" src="https://user-images.githubusercontent.com/75352728/117919045-48b74980-b327-11eb-9ee4-558bf8a06835.png">
+
+<br/>
 
 ## 접종률이 낮은 나라 중에 선진국, 개발도상국 다양하다.
 =>  간염 B형의 결측값은 0 또는 중위수로 변환 -> 호주 접종률 94.6% -> 중위수로 결정
@@ -115,19 +126,23 @@
 - 교육수준 , 인적자원 비율, BMI 지수 : 양의 상관관계
 - HIV/AIDS, 성인남녀사망률 : 음의 상관관계
 
-<br/><br/>
-
+<br/>
 
 ## GDP 구간에 따라 기대수명에 차이가 있는 거 같다! 알아보자!
+
 <br/><br/>
 
 ### 2-3. GDP에 따른 시각화
+
+<br/>
 
 #### 2-3.1. 개발도상국과 선진국 기대수명 비교
 
 <img width="450" alt="스크린샷 2021-05-06 오전 1 14 33" src="https://user-images.githubusercontent.com/75352728/117174191-6c026600-ae08-11eb-9dbd-b08b8d0f9be3.png">
 
 - 선진국의 기대수명이 현저히 높음.
+
+<br/>
 
 #### 2-3.2. GDP 구간 별 기대수명과의 관계를 요소마다 시각화하여 확인
 
@@ -158,6 +173,8 @@
    
 ### 2-4. 피쳐와 타겟 전처리
 
+<br/>
+
 #### 2-4.1 사용하지 않는 데이터 제거
 
 `led.drop(columns=['Country','Status'], inplace=True)
@@ -166,13 +183,17 @@ led.drop(columns='GDP_Bins', inplace=True)`
 - 원핫인코딩한 GDP 사용 예정
 - Country, GDP_BINS, Status 컬럼 제거
 
+<br/>
+
 #### 2-4.2 컬럼 타입 전처리
 
 `led = led.astype('float')`
 
 - 타입을 실수로 통일
 
-#### 2-4.2 데이터 니누기
+<br/>
+
+#### 2-4.3 데이터 니누기
 
 `from sklearn.model_selection import train_test_split
 X = led.drop('Lifeexpectancy', axis=1)
@@ -184,7 +205,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y,
 - train 70%
 - test 30%                                               
 
-#### 2-4.3 선형회귀모델 만들기
+<br/>
+
+#### 2-4.4 선형회귀모델 만들기
 
 `import statsmodels.api as sm
 
@@ -198,6 +221,8 @@ lm.summary()`
 -  The condition number is large, 5.38e+09. This might indicate that there are
 strong multicollinearity or other numerical problems.
  => 조건수가 너무 큼, 강한 다중공선성이 있을 수 있음. -> 스케일링 필요(더미변수 제외)
+
+<br/>
 
 #### 2-4.4 다중공산성 변수를 찾기 위한 VIF 계산
 `from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -216,9 +241,15 @@ pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train,
 - 변수를 더하거나 빼서 새로운 변수 만들기(두 예측변수를 빼거나 더해도 문제 없을 경우)
 - 더하거나 빼기 어려운 경우 변수 모형에서 제거
 
+<br/>
+
 ## 다중공산성이 변수 간에 영향을 미치지만 변수들의 관계도 의미가 있으므로 제거는 하지않는다!
 
+<br/>
+
 ### 2-5. 모델 학습과 예측 평가
+
+<br/>
 
 #### 2-5.1 예측
 
@@ -234,21 +265,27 @@ plt.plot([50,90],[50,90], 'r',ls='dashed',lw=3);`
 
 <img width="300" src="https://user-images.githubusercontent.com/75352728/117927306-fd0b9c80-b334-11eb-8e59-ef21cb2bd979.png">
 
-#### 2-5.2 모델학습
+<br/>
+
+#### 2-5.3 모델학습
 
 `from sklearn.linear_model import LinearRegression
 
 reg = LinearRegression()
 reg.fit(X_train, y_train)`
 
-#### 2-5.2 모델평가
+<br/>
+
+#### 2-5.4 모델평가
 
 `pred_tr = reg.predict(X_train)
 pred_test = reg.predict(X_test)`
 
 <img width="450" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117927594-612e6080-b335-11eb-9114-cd3091c49dc2.png">
 
-#### 2-5.2 모델성능
+<br/>
+
+#### 2-5.5 모델성능
 
 #### 1. Linear Regression & scaling
 
@@ -271,6 +308,7 @@ pred_test = reg.predict(X_test)`
 
 <img width="550" alt="스크린샷 2021-05-12 오후 3 18 58" src="https://user-images.githubusercontent.com/75352728/117938212-c12b0400-b341-11eb-8d93-482d3b1cebec.png">
 
+<br/>
 
 ### 2-6. 모델 검증
 
@@ -286,6 +324,9 @@ pred_test = reg.predict(X_test)`
 <img width="450" alt="스크린샷 2021-03-26 오후 5 26 42" src="https://user-images.githubusercontent.com/78460413/112603573-8b48c380-8e58-11eb-846f-cf862380ecf8.png">
 
 ## 최적의 모델 : RMSE가 제일 적은 RandomForest
+
+<br/>
+<br/>
 
 ## 3. CONCLUSION
 - 진행 사항
