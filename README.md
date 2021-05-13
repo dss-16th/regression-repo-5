@@ -21,9 +21,7 @@
 - 한계점 & 하고 싶은 것
   - 사용되는 모델에 대한 더 많은 분석과 공부가 필요함을 인지했으며, 추후 파라미터 변경으로 더 다양한 모델을 사용하고 싶습니다.
   - 다중공산성에 대한 심도깊은 연구가 필요함을 인지했습니다.
-
-***
-
+  
 ## 1-3. 수집 데이터
 - 출처 
   -  Kaggle : Statistical Analysis on factors influencing Life Expectancy(WTO)
