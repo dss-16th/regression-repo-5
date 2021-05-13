@@ -87,6 +87,8 @@
 |10% 이상 20% 미만|모델 기반 처리|
 |20% 이상|모델 기반 처리|
 
+<br/>
+
 `led.isnull().sum()`
 
 <img width="300" alt="스크린샷 2021-05-12 오후 1 35 07" src="https://user-images.githubusercontent.com/75352728/117918861-df373b00-b326-11eb-998d-052cec4a135f.png">
