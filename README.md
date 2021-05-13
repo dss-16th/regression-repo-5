@@ -357,4 +357,4 @@ pred_test = reg.predict(X_test)`
 - GridSearch
 <img width="450" alt="스크린샷 2021-03-26 오후 5 26 42" src="https://user-images.githubusercontent.com/78460413/112603573-8b48c380-8e58-11eb-846f-cf862380ecf8.png">
 
-## 최적의 모델 : RMSE가 제일 적은 RandomForest
+## 최적의 모델 & Scailing : RMSE가 제일 적은 Standard Scaler, RandomForest 
