@@ -24,7 +24,7 @@
 
 ***
 
-## 1-3 수집 데이터
+## 1-3. 수집 데이터
 - 출처 
   -  Kaggle : Statistical Analysis on factors influencing Life Expectancy(WTO)
   -  링크 : https://www.kaggle.com/augustus0498/life-expectancy-who 
