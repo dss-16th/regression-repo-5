@@ -14,14 +14,14 @@
 - 본 프로젝트의 목적은 EDA를 통한 전처리와 스케일링을 통하여 정제된 데이터를 가지고 분석 모델의 성능을 비교하며 최적의 모델을 찾음에 있습니다.
 
 ## 1-2. CONCLUSION
-- conclusion
+- Conclusion
   - Scaler 성능 비교를 통해 스케일링 StandScaler 선정하여 사용하였습니다.
   - RMSE가 가장 작은 최적의 모델로 판단된 RandomForest 선정하여 사용하였습니다
   -  StandScaler와 RandomForest가 가장 최적화된 성능의 모델이었습니다
   
   <br/>
   
-- limitation & 하고 싶은 것
+- Limitation & 하고 싶은 것
   - 사용되는 모델에 대한 더 많은 분석과 공부가 필요함을 인지했으며, 추후 파라미터 변경으로 더 다양한 모델을 사용하고 싶습니다.
   - 다중공산성에 대한 심도깊은 연구가 필요함을 인지했습니다.
   
