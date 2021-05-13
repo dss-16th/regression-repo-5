@@ -240,10 +240,14 @@
 
 #### 2-4.4 선형회귀모델 만들기
 
-`import statsmodels.api as sm
+`import statsmodels.api as sm`
 
-lm = sm.OLS(y_train, X_train).fit()
-lm.summary()`
+
+`lm = sm.OLS(y_train, X_train).fit()`
+
+
+`lm.summary()`
+
 
 <img width="450" alt="스크린샷 2021-05-12 오후 3 01 06" src="https://user-images.githubusercontent.com/75352728/117925919-e19f9200-b332-11eb-8f96-3fda92fb9e83.png">
 
