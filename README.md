@@ -250,7 +250,7 @@
   - R-squared이 높을 수록 좋은 모델이지만 컬럼이 많을 수록 R-squared가 높아질수밖에 없다고 한다.
 -  The condition number is large, 5.38e+09. This might indicate that there are
 strong multicollinearity or other numerical problems.
-  => 조건수가 너무 큼, 강한 다중공선성이 있을 수 있음. -> 스케일링 필요(더미변수 제외)
+  - 조건수가 너무 큼, 강한 다중공선성이 있을 수 있음. -> 스케일링 필요(더미변수 제외)
 
 <br/>
 
