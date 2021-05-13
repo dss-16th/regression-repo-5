@@ -5,6 +5,21 @@
 *그림 출처 : BBC News
 
 ***
+
+## 요약
+
+- 사용한 모델에 대한 K-Fold 수치
+<img width="430" alt="스크린샷 2021-03-26 오후 5 26 13" src="https://user-images.githubusercontent.com/78460413/112603568-897f0000-8e58-11eb-9352-426231c3dc30.png">
+
+- 회귀 평가 지표
+<img width="450" alt="스크린샷 2021-03-26 오후 5 32 01" src="https://user-images.githubusercontent.com/78460413/112604249-42ddd580-8e59-11eb-9daf-e099496fa7e0.png">
+
+- GridSearch
+<img width="450" alt="스크린샷 2021-03-26 오후 5 26 42" src="https://user-images.githubusercontent.com/78460413/112603573-8b48c380-8e58-11eb-846f-cf862380ecf8.png">
+
+-  StandScaler와 RandomForest가 가장 최적화된 성능의 모델이었습니다
+
+***
 ## 1. INTRO
 
 ### 1-1 개요
