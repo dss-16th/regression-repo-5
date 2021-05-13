@@ -228,12 +228,11 @@ strong multicollinearity or other numerical problems.
 #### 2-4.4 다중공산성 변수를 찾기 위한 VIF 계산
 
 `from statsmodels.stats.outliers_influence import variance_inflation_factor
-
 sm.OLS(y_train, X_train).exog_names
-
 pd.DataFrame({'컬럼': column, 'VIF': variance_inflation_factor(sm.OLS(y_train, X_train).exog, i)} 
              for i, column in enumerate(sm.OLS(y_train, X_train).exog_names)
              if column != 'Intercept')`
+             
              
 <img width="350" alt="스크린샷 2021-05-12 오후 3 06 03" src="https://user-images.githubusercontent.com/75352728/117926335-933ec300-b333-11eb-9de3-487a196f26ca.png">
 
@@ -272,7 +271,6 @@ plt.plot([50,90],[50,90], 'r',ls='dashed',lw=3);`
 #### 2-5.3 모델학습
 
 `from sklearn.linear_model import LinearRegression
-
 reg = LinearRegression()
 reg.fit(X_train, y_train)`
 
