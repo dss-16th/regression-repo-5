@@ -50,7 +50,7 @@
         - Income composition of resources : 자원소득구성 중 인적자원
         - Schooling : 교육 정도
 
-<br/>
+
 ### 1-4 팀원 / 역할
 - [이지홍]
   - https://github.com/jihong7107
