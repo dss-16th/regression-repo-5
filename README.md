@@ -1,3 +1,4 @@
+
 # 회귀 분석을 이용한 기대수명 예측
 
 ![life_expectancy](https://user-images.githubusercontent.com/78460413/112588440-bfb18500-8e42-11eb-8319-1b456b7592c9.png)
@@ -69,7 +70,9 @@
 
 ## 2. PROCESS
 
-데이터 전처리 -> 상관관계 시각화 -> 피쳐와 타겟 전처리 -> 모델학습과 예측 평가 -> 모델 검증 
+<br/>
+
+<img width="157" alt="스크린샷 2021-06-07 오전 12 37 16" src="https://user-images.githubusercontent.com/75352728/120930518-8477e000-c728-11eb-840a-ce6b4eda0b36.png">
  
 <br/>
 
